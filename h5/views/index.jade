@@ -1,10 +1,49 @@
 extends layout
-
 block content
-  h3= title
-  .container-fluid
-    .row
-      .col-xs-1 郑州贝利
-      .col-xs-2 全部产品
-      .col-xs-3 新闻活动
-      .col-xs-4 技术支持/客户服务
+  //h3= title
+  meta(name='viewport',content='width=device-width,initial-scale=1')
+  section.header-area
+     nav.nav.navbar-fixed-top.navbar-inverse
+        div.container
+            div.navbar-header
+                button.navbar-toggle(data-toggle="collapse",data-target="#menu")
+                    //span.sr-only toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="#") 郑州贝利
+            div#menu.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li.nav-item.active
+                        a.page-scroll(href="#home") 首页
+                    li.nav-item
+                        a.page-scoll(href='#product') 全部产品
+                    li.nav-item
+                        a.page-scoll(href="#new") 新闻活动
+                    li.nav-item
+                        a.page-scoll(href="#contact") 技术支持/客户服务
+     div#home
+        div.carousel.slide#mycarousel(data-ride='carousel',data-interval='2000')
+        //轮播指标
+        ol.carousel-indicators
+            li.active(data-target='#mycarousel',data-slide-to='0')
+            li(data-target='#mycarousel',data-slide-to='1')
+            li(data-target='#mycarousel',data-slide-to='2')
+        //轮播项目
+        div.carousel-inner(role='listbox')
+            div.carousel-item.active
+                div.hidden-xs#mycarouselitem1
+            div.carousel-item
+                div.hidden-xs#mycarouselitem2(style={backgroundImage:'/img/2.jpg'})
+            div.carousel-item
+                div.hidden-xs#mycarouselitem3(src='/img/3.jpg')
+        //轮播导航
+        a.carousel-control.left(href='#mycarousel',data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+        a.carousel-control.right(href='#mycarousel',data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aira-hidden='true')
+    //.row
+    //  .col-xs-1 郑州贝利
+    //  .col-xs-2 全部产品
+    //  .col-xs-3 新闻活动
+    //  .col-xs-4 技术支持/客户服务
