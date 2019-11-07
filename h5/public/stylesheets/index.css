@@ -1,0 +1,22 @@
+.nav-a {
+    font-size: 16px!important;
+    border-top-width: 0.5em!important;
+    border-top-style: solid;
+    border-top-color: transparent;
+}
+#menu > ul > li > a:hover,
+#menu .nav-active {
+    background-color: #080808;
+    /*border-top-width: 0.5em;*/
+    border-top-color: #d58512;
+    color: #7a4300;
+
+}
+#menu ul li{
+}
+#home #mycarousel .carousel-img {
+
+}
+/*#img1 {*/
+/*    background-image: url("../img/1.jpg");*/
+/*}*/
