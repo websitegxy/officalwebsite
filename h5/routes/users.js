@@ -13,5 +13,12 @@ router.get('/findById',function(req,res,next) {
 router.get('/findAll',function (req,res,next) {
   userDao.queryAll(req,res,next);
 })
-
+//查询字典
+router.get('/findAllDict',function (req,res,next) {
+  userDao.queryAllDict(req,res,next);
+})
+//查询轮播图
+router.get('/findAllCarousel',function (req,res,next) {
+  userDao.queryAllCarousel(req,res,next);
+})
 module.exports = router;

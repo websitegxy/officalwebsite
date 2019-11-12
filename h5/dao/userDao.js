@@ -36,5 +36,21 @@ module.exports = {
             });
 
         })
+    },
+    queryAllDict: function (req,res,next) {
+        pool.getConnection(function (err,connection) {
+            connection.query($sql.queryAllDict,function (err,result) {
+                jsonWrite(res,result);
+                connection.release();
+            })
+        })
+    },
+    queryAllCarousel: function (req,res,next) {
+        pool.getConnection(function (err,connection) {
+            connection.query($sql.queryAllCarousel,function (err,result) {
+                jsonWrite(res,result);
+                connection.release();
+            })
+        })
     }
 }
