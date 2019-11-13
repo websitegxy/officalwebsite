@@ -10,9 +10,17 @@ $(function(){
             }
         }
     });
+    //加载轮播图
     $.get('/users/findAllCarousel',function (data) {
         for(var i = 0; i <data.length;i++){
+            if(i == 0){
+                $('#carousel-ol').append("<li class='active' data-target='#mycarousel', data-slide-to=" + i + "></li>");
+                $('#carousel-div').append("<div class='item active'><img class='carousel-img' src="+data[i].img_url +"></div>")
+            }else{
 
+                $('#carousel-ol').append("<li data-target='#mycarousel', data-slide-to=" + i + "></li>");
+                $('#carousel-div').append("<div class=item><img class='carousel-img' src=" + data[i].img_url + "></div>")
+            }
         }
 
     })

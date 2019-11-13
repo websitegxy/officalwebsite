@@ -25,24 +25,23 @@ block content
      div#home
         div.carousel.slide#mycarousel(data-ride='carousel',data-interval='2000')
             //轮播指标
-            ol.carousel-indicators
-                li.active(data-target='#mycarousel',data-slide-to='0')
-                li(data-target='#mycarousel',data-slide-to='1')
-                li(data-target='#mycarousel',data-slide-to='2')
+            ol#carousel-ol.carousel-indicators
+                //li.active(data-target='#mycarousel',data-slide-to='0')
+                //li(data-target='#mycarousel',data-slide-to='1')
+                //li(data-target='#mycarousel',data-slide-to='2')
             //轮播项目
-            div.carousel-inner
-                div.item.active
-                    img.carousel-img(src='/img/slider-1.jpg')
-                div.item
-                    img.carouser-img(src='/img/slider-2.jpg')
-                div.item
-                    img.carousel-img(src='/img/slider-3.jpg')
+            div#carousel-div.carousel-inner
+                //div.item.active
+                //    img.carousel-img(src='/img/slider-1.jpg')
+                //div.item
+                //    img.carouser-img(src='/img/slider-2.jpg')
+                //div.item
+                //    img.carousel-img(src='/img/slider-3.jpg')
             //轮播导航
             a.carousel-control.left(href='#mycarousel',data-slide='prev')
                 span.glyphicon.glyphicon-menu-left(aria-hidden='true')
             a.carousel-control.right(href='#mycarousel',data-slide='next')
                 span.glyphicon.glyphicon-menu-right(aira-hidden='true')
   section#product
-    -alert(carousel);
     -for(var i = 0; i < 3; i++)
       span this is span
