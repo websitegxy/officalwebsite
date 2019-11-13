@@ -12,10 +12,25 @@
     color: #7a4300;
 
 }
+.mySection{
+    margin-top: 40px;
+}
 #menu ul li{
 }
 #home #mycarousel .carousel-img {
 
+}
+/*水平分割线*/
+.myHr{
+    height: 1px;
+    border-top: 1px solid #0f0f0f;
+    text-align: center;
+}
+.myHr span{
+    position: relative;
+    background: #fff;
+    top: -8px;
+    padding: 0 20px;
 }
 /*#img1 {*/
 /*    background-image: url("../img/1.jpg");*/
