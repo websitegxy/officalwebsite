@@ -5,11 +5,17 @@ $(function(){
     });
     $.get('/users/findAllDict',function (data) {
         for(var i = 0; i < data.length; i++){
+            //加载公司名称
             if(data[i].code == 'cname'){
                 $('#cname').text(data[i].name);
             }
+            //加载公司简介
             if(data[i].code == 'introduction'){
                 $('#introduction-p').text(data[i].name);
+            }
+            //加载为什么选择我们
+            if(data[i].code == 'introduction'){
+                $('#why-p').text(data[i].name);
             }
         }
     });

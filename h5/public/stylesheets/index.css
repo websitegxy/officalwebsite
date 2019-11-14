@@ -60,6 +60,20 @@
    margin-left: 10%;
    margin-right: 10%;
 }
+/*why*/
+#greyDiv {
+    background-color: grey;
+    width: 40%;
+    float: left;
+
+}
+#why-span {
+    font-weight: bold;
+}
+/*footer*/
+#myFooter {
+    background-color:black;
+}
 /*#img1 {*/
 /*    background-image: url("../img/1.jpg");*/
 /*}*/
