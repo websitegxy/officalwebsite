@@ -22,15 +22,43 @@
 }
 /*水平分割线*/
 .myHr{
+    /*width: 80%;*/
     height: 1px;
     border-top: 1px solid #0f0f0f;
     text-align: center;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    border-color: rgb(189,190,190);
+    font-size: 1.4vw;
 }
 .myHr span{
     position: relative;
     background: #fff;
-    top: -8px;
-    padding: 0 20px;
+    top: -0.8em;
+    padding: 0 10px;
+    font-size: 1.4vw;
+    color: rgb(98,99,100);
+}
+.myHr span {
+
+}
+/*公司简介*/
+#introduction-div {
+    /*width: 80%;*/
+    background-color: rgb(67,68,69);
+}
+#introduction-p{
+    font-family: Arial;
+    line-height: 2em;
+    font-size: 1vw;
+    padding: 8% 10% 8%;
+    color: rgb(154,153,152);
+    white-space: pre-wrap;
+}
+.mySection > .container > div {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: 10%;
 }
 /*#img1 {*/
 /*    background-image: url("../img/1.jpg");*/

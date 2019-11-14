@@ -8,6 +8,9 @@ $(function(){
             if(data[i].code == 'cname'){
                 $('#cname').text(data[i].name);
             }
+            if(data[i].code == 'introduction'){
+                $('#introduction-p').text(data[i].name);
+            }
         }
     });
     //加载轮播图
