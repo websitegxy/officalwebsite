@@ -8,14 +8,23 @@ $(function(){
             //加载公司名称
             if(data[i].code == 'cname'){
                 $('#cname').text(data[i].name);
+                $('#footer-cname-li').prepend(data[i].name)
             }
             //加载公司简介
             if(data[i].code == 'introduction'){
                 $('#introduction-p').text(data[i].name);
             }
             //加载为什么选择我们
-            if(data[i].code == 'introduction'){
+            if(data[i].code == 'choose'){
                 $('#why-p').text(data[i].name);
+            }
+            //联系方式
+            if(data[i].code == 'tel'){
+                $('#footer-tel-a').append(data[i].name);
+            }
+            //地址
+            if(data[i].code == 'address'){
+                $('#footer-address-li').text(data[i].name);
             }
         }
     });
