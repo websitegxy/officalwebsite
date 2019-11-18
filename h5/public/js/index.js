@@ -58,5 +58,11 @@ $(function(){
             }
         }
 
+    });
+    //加载品牌
+    $.get('/users/findAllBrand',function (data) {
+        for(var i = 0; i < data.length;i++){
+            $('#all-product').append("<div class='product-div'>1</div>");
+        }
     })
 });

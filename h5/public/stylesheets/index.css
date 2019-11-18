@@ -61,12 +61,41 @@
    margin-left: 10%;
    margin-right: 10%;
 }
+/*brand*/
+#all-product {
+   width: 80%;
+   background-image: url('../img/1.jpg');
+   height: 25vh;
+}
+.product-div {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    border-right-width: 1px;
+    border-right-color: white;
+    border-right-style: solid;
+}
 /*why*/
+#why-container {
+   padding: 0px;
+}
 #greyDiv {
     background-color: grey;
     width: 40%;
     float: left;
+    padding-left: 5%;
 
+}
+#blackDiv {
+    background-color: black;
+}
+#hourImg {
+   width: 60%;
+}
+#why-div {
+    background-color: red;
+    float: left;
+    width: 60%;
 }
 #why-span {
     font-weight: bold;

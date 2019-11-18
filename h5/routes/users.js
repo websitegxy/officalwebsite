@@ -21,4 +21,8 @@ router.get('/findAllDict',function (req,res,next) {
 router.get('/findAllCarousel',function (req,res,next) {
   userDao.queryAllCarousel(req,res,next);
 })
+//查询品牌
+router.get('/findAllBrand',function (req,res,next) {
+  userDao.queryAllBrand(req,res,next);
+})
 module.exports = router;
