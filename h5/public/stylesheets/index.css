@@ -64,16 +64,27 @@
 /*brand*/
 #all-product {
    width: 80%;
-   background-image: url('../img/1.jpg');
-   height: 25vh;
+   background-image: url('../img/3.jpg');
+   height: 27vw;
+   /*height: 25vh;*/
 }
 .product-div {
     display: inline-block;
     width: 25%;
     height: 100%;
     border-right-width: 1px;
-    border-right-color: white;
+    border-right-color: grey;
     border-right-style: solid;
+}
+.product-div:hover {
+    background-color: rgba(0,0,0,0.5);
+}
+.logo-div  {
+    margin-left: 25%;
+    margin-right: 25%;
+    position: relative;
+    top: 70%;
+    width: 50%;
 }
 /*why*/
 #why-container {
@@ -99,6 +110,44 @@
 }
 #why-span {
     font-weight: bold;
+}
+/*contact*/
+#contact-container {
+    padding: 0;
+}
+#contact-div1  {
+    background-color: grey;
+    text-align: center;
+    padding : 5vh
+
+}
+#contact-div1 > div{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding:2vh 3vh 2vh 3vh;
+    margin-right: 1vh;
+}
+#contact-div2 {
+    width: 80%;
+    text-align: center;
+}
+#contact-div2 > div{
+
+}
+#contact-span1 {
+    font-size: 0.2vw;
+
+}
+#contact-span2 {
+    font-size: 1vw;
+    font-weight: bold;
+}
+#contact-span3 {
+    font-size: 0.7vw;
+}
+.contact-hr {
+    border-top: 1px solid grey;
 }
 /*footer*/
 #myFooter {
