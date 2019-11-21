@@ -3,6 +3,34 @@ $(function(){
         $('.nav-a').removeClass('nav-active');
         $(this).addClass('nav-active');
     });
+    $("#nav-a5").click(function(){
+        $('#contact').removeClass('none-div');
+    });
+    $(window).scroll(function () {
+        var top1 = $("#home").offset().top;//a1位置
+        var top2 = $("#product").offset().top;//a2位置
+        var top3 = $("#new").offset().top;//a3位置
+        var top4 = $("#introdution").offset().top;//a4位置
+        var top5 = $("#contact").offset().top;//a5位置
+        var scrollTop = $(window).scrollTop();//获取当前滑动位置
+        if(top2 > scrollTop > top1){
+            $('.nav-a').removeClass('nav-active');
+            $('#nav-a1').addClass('nav-active');
+        }else if(top3 > scrollTop > top2){
+            $('.nav-a').removeClass('nav-active');
+            $('#nav-a2').addClass('nav-active');
+        }else if(top4 > scrollTop > top3){
+            $('.nav-a').removeClass('nav-active');
+            $('#nav-a3').addClass('nav-active');
+        }else if(top5 > scrollTop > top4){
+            $('.nav-a').removeClass('nav-active');
+            $('#nav-a4').addClass('nav-active');
+        }
+        // else if(scrollTop > top5){
+        //     $('.nav-a').removeClass('nav-active');
+        //     $('#nav-a5').addClass('nav-active');
+        // }
+    })
     $.get('/users/findAllDict',function (data) {
         for(var i = 0; i < data.length; i++){
             //加载公司名称

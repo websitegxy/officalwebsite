@@ -15,15 +15,15 @@ block content
             div#menu.collapse.navbar-collapse
                 ul.nav.navbar-nav
                     li.nav-item
-                        a.page-scroll.nav-a.nav-active(href="#home") 首页
+                        a#nav-a1.page-scroll.nav-a.nav-active(href="#home") 首页
                     li.nav-item
-                        a.page-scoll.nav-a(href='#product') 全部产品
+                        a#nav-a2.page-scoll.nav-a(href='#product') 全部产品
                     li.nav-item
-                        a.page-scoll.nav-a(href="#new") 新闻活动
+                        a#nav-a3.page-scoll.nav-a(href="#new") 新闻活动
                     li.nav-item
-                        a.page-scoll.nav-a(href="#introdution") 公司简介
+                        a#nav-a4.page-scoll.nav-a(href="#introdution") 公司简介
                     li.nav-item
-                        a.page-scoll.nav-a(href="#contact") 技术支持/客户服务
+                        a#nav-a5.page-scoll.nav-a(href="#contact") 技术支持/客户服务
      div#home
         div.carousel.slide#mycarousel(data-ride='carousel',data-interval='2000')
             //轮播指标
@@ -89,7 +89,7 @@ block content
               h1.h2 为什么选择我们
               p#why-p
               span#why-span 热枕欢迎国内外客商前来洽谈合作。
-  section#contact.mySection
+  section#contact.mySection.none-div
       div#contact-container.container-fluid
           div#contact-div1
               div
@@ -99,11 +99,9 @@ block content
           div#contact-div2
               div.contact-div-span
                   span#contact-span1 本公司设有专业的销售经理、售后工程师，可上门为实际操作中遇到问题的用户提供具有针对性的解决方案
-                  hr.contact-hr
               div.contact-div-span
                   span#contact-span2 购买本公司产品后可按照产品附赠的质量保证书进行质保。
-                  hr.contact-hr
-              div
+              div#contact-div-span3
                   span 咨询电话：0376-67668858（咨询时间：8：00-18：00）
   section#footer.mySection
       div#myFooter.container-fluid

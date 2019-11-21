@@ -4,6 +4,9 @@
     border-top-style: solid;
     border-top-color: transparent;
 }
+.none-div {
+    display: none;
+}
 #menu > ul > li > a:hover,
 #menu .nav-active {
     background-color: #080808;
@@ -112,6 +115,9 @@
     font-weight: bold;
 }
 /*contact*/
+#contact {
+    margin-top: 20vh;
+}
 #contact-container {
     padding: 0;
 }
@@ -129,11 +135,22 @@
     margin-right: 1vh;
 }
 #contact-div2 {
-    width: 80%;
-    text-align: center;
-}
-#contact-div2 > div{
 
+}
+.contact-div-span {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    border-bottom: 1px grey solid;
+    padding: 2%;
+}
+#contact-div-span3 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 2%;
 }
 #contact-span1 {
     font-size: 0.2vw;
@@ -146,9 +163,9 @@
 #contact-span3 {
     font-size: 0.7vw;
 }
-.contact-hr {
-    border-top: 1px solid grey;
-}
+/*.contact-hr {*/
+/*    border-top: 1px solid grey;*/
+/*}*/
 /*footer*/
 #myFooter {
     padding: 0;
