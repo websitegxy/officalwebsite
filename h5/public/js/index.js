@@ -4,25 +4,25 @@ $(function(){
         $('#contact').removeClass('none-div');
     });
     $(window).scroll(function () {
-        var top1 = $("#home").offset().top;//a1位置
-        var top2 = $("#product").offset().top;//a2位置
-        var top3 = $("#new").offset().top;//a3位置
-        var top4 = $("#introdution").offset().top;//a4位置
-        var top5 = $("#contact").offset().top;//a5位置
-        var scrollTop = $(window).scrollTop();//获取当前滑动位置
-        if(top2 > scrollTop && scrollTop > top1){
-            $('.nav-a').removeClass('nav-active');
-            $('#nav-a1').addClass('nav-active');
-        }else if(top3 > scrollTop && scrollTop > top2){
-            $('.nav-a').removeClass('nav-active');
-            $('#nav-a2').addClass('nav-active');
-        }else if(top4 > scrollTop && scrollTop > top3){
-            $('.nav-a').removeClass('nav-active');
-            $('#nav-a3').addClass('nav-active');
-        }else if(scrollTop > top4){
-            $('.nav-a').removeClass('nav-active');
-            $('#nav-a4').addClass('nav-active');
-        }
+        // var top1 = $("#home").offset().top;//a1位置
+        // var top2 = $("#product").offset().top;//a2位置
+        // var top3 = $("#new").offset().top;//a3位置
+        // var top4 = $("#introdution").offset().top;//a4位置
+        // var top5 = $("#contact").offset().top;//a5位置
+        // var scrollTop = $(window).scrollTop();//获取当前滑动位置
+        // if(top2 > scrollTop && scrollTop > top1){
+        //     $('.nav-a').removeClass('nav-active');
+        //     $('#nav-a1').addClass('nav-active');
+        // }else if(top3 > scrollTop && scrollTop > top2){
+        //     $('.nav-a').removeClass('nav-active');
+        //     $('#nav-a2').addClass('nav-active');
+        // }else if(top4 > scrollTop && scrollTop > top3){
+        //     $('.nav-a').removeClass('nav-active');
+        //     $('#nav-a3').addClass('nav-active');
+        // }else if(scrollTop > top4){
+        //     $('.nav-a').removeClass('nav-active');
+        //     $('#nav-a4').addClass('nav-active');
+        // }
         // else if(scrollTop > top5){
         //     $('.nav-a').removeClass('nav-active');
         //     $('#nav-a5').addClass('nav-active');
@@ -87,11 +87,11 @@ $(function(){
     //加载品牌
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
-            $('#all-product').append("<div class='product-div'><img class='logo-div' src='../img/branlog.png'/></div>");
+            $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='../img/branlog.png'/></div>");
         }
         //品牌点击事件
         $(".product-div").click(function () {
-                alert(1);
+                alert($(this).attr('branid'));
         });
     });
 
