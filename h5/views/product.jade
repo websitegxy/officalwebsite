@@ -2,10 +2,26 @@ extends layout
 block content
     meta(name='viewport',content='width=device-width,initial-scale=1')
     link(rel='stylesheet',href='/stylesheets/product.css')
+    script(src='/js/product.js')
     include navbar
-    section#mySection
-        div#bran-product-div.container
-            div
-                p.myHr
-                    span 全部产品
+    section#proudcts-section
+        div#products-div
+            div#hr-div
+                p.products-hr
+                    span 产品总览
+                div#products-bran-div
+                    ul#products-bran-ul
+        div#products-detail-div
+            //div.products-item-div
+            //    span 郑州贝利
+            //    hr
+            //    div.product-items-div
+            //        div.product-item-div
+            //        div.product-item-div
+            //        div.product-item-div
+            //    div.product-items-div
+            //        div.product-item-div
+            //        div.product-item-div
+            //        div.product-item-div
+
     include footer

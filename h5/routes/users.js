@@ -24,5 +24,9 @@ router.get('/findAllCarousel',function (req,res,next) {
 //查询品牌
 router.get('/findAllBrand',function (req,res,next) {
   userDao.queryAllBrand(req,res,next);
-})
+});
+//按品牌id查询商品
+router.get('/findProductByBranId',function(req,res,next) {
+  userDao.queryProductByBranId(req,res,next);
+});
 module.exports = router;

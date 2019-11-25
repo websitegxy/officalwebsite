@@ -1,19 +1,88 @@
+#products-section {
+    margin: 0 0;
+}
+#products-div {
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    height: 20vh;
+    background-color: grey;
+    padding: 8% 0;
+    position: relative;
+}
+#hr-div{
+    width: 60%;
+    margin: 0 auto;
+}
 /*水平分割线*/
-.myHr{
-    /*width: 80%;*/
+.products-hr{
+
+
     height: 1px;
     border-top: 1px solid #0f0f0f;
     text-align: center;
-    margin-bottom: 8%;
-    margin-top: 8%;
+    /*margin-bottom: 8%;*/
+    /*margin-top: 8%;*/
     border-color: rgb(189,190,190);
     font-size: 1.4vw;
 }
-.myHr span{
+.products-hr span{
     position: relative;
-    background: #fff;
+    background: grey;
     top: -0.8em;
     padding: 0 10px;
     font-size: 1.4vw;
     color: rgb(98,99,100);
+}
+/*全部产品导航栏*/
+#products-bran-div {
+
+    position: absolute;
+    bottom: 0px;
+    margin: 0 0;
+}
+#products-bran-div > ul {
+    padding: 0 0;
+}
+#products-bran-div > ul > li {
+    text-decoration: none;
+    display: inline;
+    margin-right: 2vh;
+}
+#products-bran-div > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+#products-bran-div > ul > li > a:hover{
+    color: red;
+}
+
+/*产品item*/
+#products-detail-div {
+    margin: 0 0;
+    padding: 0 0;
+    width: 100%;
+    padding: 8% 0;
+    position: relative;
+}
+.products-item-div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.products-item-div > span {
+    font-weight: bold;
+}
+#products-detail-div hr {
+    border: 1px grey solid;
+}
+.product-items-div {
+    text-align: left;
+}
+.product-item-div {
+    display: inline-block;
+    width: 33%;
+    height: 20vw;
+    background-image: url("../img/item1.png");
+    background-size: cover;
 }
