@@ -4,14 +4,23 @@
     padding: 0;
 }
 #footer-bran-div {
-    padding: 5% 2%;
-    background-color:rgb(48,49,50);
-    font-size: 1vw;
+    padding: 10.5vw 12.6vw;
+    background-color:rgb(49,49,49);
+    height: 26vw;
 }
 #footer-bran-div ul li {
-    line-height: 2em;
+    margin-bottom: 0.012vw;
 }
 #footer-bran-div ul li > a {
+    color: rgba(232,232,232,0.5);
+    text-decoration: none;
+    font-size: 0.0094vw;
+    font-family: "Hiragino Sans GB";
+}
+#footer-bran-div ul li > a:hover {
+    color: rgba(232,232,232,1);
+}
+#footer-div ul li > a {
     color: rgb(154,153,152);
     text-decoration: none;
     font-size: 1vw;

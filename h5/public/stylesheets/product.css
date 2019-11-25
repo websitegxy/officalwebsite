@@ -1,0 +1,19 @@
+/*水平分割线*/
+.myHr{
+    /*width: 80%;*/
+    height: 1px;
+    border-top: 1px solid #0f0f0f;
+    text-align: center;
+    margin-bottom: 8%;
+    margin-top: 8%;
+    border-color: rgb(189,190,190);
+    font-size: 1.4vw;
+}
+.myHr span{
+    position: relative;
+    background: #fff;
+    top: -0.8em;
+    padding: 0 10px;
+    font-size: 1.4vw;
+    color: rgb(98,99,100);
+}
