@@ -1,0 +1,28 @@
+block content
+    link(rel='stylesheet', href='/libs/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet',href='/stylesheets/navbar.css')
+    script(src='libs/jquery/dist/jquery.min.js')
+    script(src='/libs/bootstrap/dist/js/bootstrap.js')
+    script(src='/js/navbar.js')
+section.header-area
+    nav.nav.navbar-fixed-top.navbar-inverse
+        div.container
+            div.navbar-header
+                button.navbar-toggle(data-toggle="collapse",data-target="#menu")
+                    //span.sr-only toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a#cname.navbar-brand.nav-a(href="#") 郑州贝利金刚石工具有限公司
+            div#menu.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li.nav-item
+                        a#nav-a1.page-scroll.nav-a.nav-active(href="/") 首页
+                    li.nav-item
+                        a#nav-a2.page-scoll.nav-a(href='/#product') 全部产品
+                    li.nav-item
+                        a#nav-a3.page-scoll.nav-a(href="/#new") 新闻活动
+                    li.nav-item
+                        a#nav-a4.page-scoll.nav-a(href="/#introdution") 公司简介
+                    li.nav-item
+                        a#nav-a5.page-scoll.nav-a(href="/contact") 技术支持/客户服务

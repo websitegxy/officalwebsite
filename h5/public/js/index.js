@@ -1,8 +1,5 @@
 $(function(){
-    $('.nav-a').click(function () {
-        $('.nav-a').removeClass('nav-active');
-        $(this).addClass('nav-active');
-    });
+
     $("#nav-a5").click(function(){
         $('#contact').removeClass('none-div');
     });
@@ -13,16 +10,16 @@ $(function(){
         var top4 = $("#introdution").offset().top;//a4位置
         var top5 = $("#contact").offset().top;//a5位置
         var scrollTop = $(window).scrollTop();//获取当前滑动位置
-        if(top2 > scrollTop > top1){
+        if(top2 > scrollTop && scrollTop > top1){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a1').addClass('nav-active');
-        }else if(top3 > scrollTop > top2){
+        }else if(top3 > scrollTop && scrollTop > top2){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a2').addClass('nav-active');
-        }else if(top4 > scrollTop > top3){
+        }else if(top4 > scrollTop && scrollTop > top3){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a3').addClass('nav-active');
-        }else if(top5 > scrollTop > top4){
+        }else if(scrollTop > top4){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a4').addClass('nav-active');
         }
@@ -34,10 +31,10 @@ $(function(){
     $.get('/users/findAllDict',function (data) {
         for(var i = 0; i < data.length; i++){
             //加载公司名称
-            if(data[i].code == 'cname'){
-                $('#cname').text(data[i].name);
-                $('#footer-cname-li').prepend(data[i].name)
-            }
+            // if(data[i].code == 'cname'){
+            //     $('#cname').text(data[i].name);
+            //     $('#footer-cname-li').prepend(data[i].name)
+            // }
             //加载公司简介
             if(data[i].code == 'introduction'){
                 $('#introduction-p').text(data[i].name);
@@ -46,14 +43,14 @@ $(function(){
             if(data[i].code == 'choose'){
                 $('#why-p').text(data[i].name);
             }
-            //联系方式
-            if(data[i].code == 'tel'){
-                $('#footer-tel-a').append(data[i].name);
-            }
-            //地址
-            if(data[i].code == 'address'){
-                $('#footer-address-li').text(data[i].name);
-            }
+            // //联系方式
+            // if(data[i].code == 'tel'){
+            //     $('#footer-tel-a').append(data[i].name);
+            // }
+            // //地址
+            // if(data[i].code == 'address'){
+            //     $('#footer-address-li').text(data[i].name);
+            // }
         }
     });
     //加载轮播图

@@ -1,0 +1,55 @@
+/*contact*/
+
+#contact-container {
+    padding: 0;
+}
+#contact-div1  {
+    background-color: grey;
+    text-align: center;
+    padding : 5vw
+
+}
+.contact-div-div{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding:2vw 3vw 2vw 3vw;
+    margin-right: 1vw;
+}
+#contact-img {
+    display: inline-block;
+    width: 15vw;
+    margin-right: 1vw;
+}
+#contact-img > img {
+    width: 100%;
+}
+#contact-div2 {
+
+}
+.contact-div-span {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    border-bottom: 1px grey solid;
+    padding: 2%;
+}
+#contact-div-span3 {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 2%;
+}
+#contact-span1 {
+    font-size: 0.2vw;
+
+}
+#contact-span2 {
+    font-size: 1vw;
+    font-weight: bold;
+}
+#contact-span3 {
+    font-size: 0.7vw;
+}

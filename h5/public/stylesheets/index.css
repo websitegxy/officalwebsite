@@ -1,29 +1,11 @@
-.nav-a {
-    font-size: 16px!important;
-    border-top-width: 0.5em!important;
-    border-top-style: solid;
-    border-top-color: transparent;
-}
-.none-div {
-    display: none;
-}
-#menu > ul > li > a:hover,
-#menu .nav-active {
-    background-color: #080808;
-    /*border-top-width: 0.5em;*/
-    border-top-color: #d58512;
-    color: #7a4300;
 
-}
 .mySection{
     margin-top: 40px;
 }
  ul li{
      list-style: none;
 }
-#home #mycarousel .carousel-img {
 
-}
 /*水平分割线*/
 .myHr{
     /*width: 80%;*/
@@ -114,106 +96,11 @@
 #why-span {
     font-weight: bold;
 }
-/*contact*/
-#contact {
-    margin-top: 20vh;
-}
-#contact-container {
-    padding: 0;
-}
-#contact-div1  {
-    background-color: grey;
-    text-align: center;
-    padding : 5vh
 
-}
-#contact-div1 > div{
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding:2vh 3vh 2vh 3vh;
-    margin-right: 1vh;
-}
-#contact-div2 {
-
-}
-.contact-div-span {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    border-bottom: 1px grey solid;
-    padding: 2%;
-}
-#contact-div-span3 {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
-    text-align: center;
-    padding-top: 2%;
-}
-#contact-span1 {
-    font-size: 0.2vw;
-
-}
-#contact-span2 {
-    font-size: 1vw;
-    font-weight: bold;
-}
-#contact-span3 {
-    font-size: 0.7vw;
-}
 /*.contact-hr {*/
 /*    border-top: 1px solid grey;*/
 /*}*/
-/*footer*/
-#myFooter {
-    padding: 0;
-}
-#footer-bran-div {
-    padding: 5% 2%;
-    background-color:rgb(48,49,50);
-    font-size: 1vw;
-}
-#footer-bran-div ul li {
-    line-height: 2em;
-}
-#footer-bran-div ul li > a {
-    color: rgb(154,153,152);
-    text-decoration: none;
-    font-size: 1vw;
-}
-#footer-bran-div ul li > a:hover {
-    color: rgb(255,255,255);
-}
-#footer-div {
-    width: 100%;
-    background-color: rgb(0,0,1);
-    padding: 4% 8%;
-}
-#footer-div > ul {
-}
-#footer-div > ul > li {
 
-    display: inline;
-    color: rgb(154,153,152);
-    font-size: 1vw;
-    margin-right: 4%;
-}
-#footer-div #footer-cname-li > span {
-    margin-right: 4%;
-    margin-left: 8%;
-}
-#footer-cname-li {
-    font-weight: bold;
-}
-#footer-tel-a {
-    color: rgb(154,153,152);
-    text-decoration: none;
-}
-#footer-tel-a:hover {
-    color: rgb(255,255,255);
-}
 /*#footer-div > ul > li:first-child {*/
 /*    border-right-width: 1px;*/
 /*    border-color: rgb(154,153,152);*/
