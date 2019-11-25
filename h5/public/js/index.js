@@ -87,7 +87,7 @@ $(function(){
     //加载品牌
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
-            $('#all-product').append("<div class='product-div'><img class='logo-div' src='../img/2.jpg'/></div>");
+            $('#all-product').append("<div class='product-div'><img class='logo-div' src='../img/branlog.png'/></div>");
         }
         //品牌点击事件
         $(".product-div").click(function () {
