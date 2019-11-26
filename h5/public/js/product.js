@@ -3,8 +3,8 @@ $(function () {
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
             // $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='../img/branlog.png'/></div>");
-            $('#products-bran-ul').append("<li><a>"+ data[i].classify_name +"</a></li>");
-            $('#products-detail-div').append("<div class='products-item-div'><span>" + data[i].classify_name +"</span><hr><div class='product-items-div' branId='" + data[i].id+"'></div></div>'");
+            $('#products-bran-ul').append("<li><a href='#"+ data[i].id+"'>"+ data[i].classify_name +"</a></li>");
+            $('#products-detail-div').append("<div class='products-item-div' id='" + data[i].id +"'><span>" + data[i].classify_name +"</span><hr><div class='product-items-div' branId='" + data[i].id+"'></div></div>'");
 
         }
 
