@@ -6,7 +6,7 @@ $(function () {
             $('#products-detail-div').append("<div class='products-item-div' id='" + data[i].id +"'><span>" + data[i].classify_name +"</span><hr><div class='product-items-div' branId='" + data[i].id+"'></div></div>'");
 
         }
-
+        $.ajaxSettings.async = false;
         //加载品牌下商品
         $('.product-items-div').each(function () {
             var product_items_div = $(this);
@@ -16,8 +16,15 @@ $(function () {
                     product_items_div.append('<div class="product-item-div" productId=' + product[j].id + '></div>');
                 }
 
+
             });
 
+        });
+        $('.product-item-div').click(function () {
+            var product_item_div = $(this);
+            var productId = product_item_div.attr('productId');
+
+            window.location = 'productItem?id=' + productId;
         })
 
     });

@@ -1,0 +1,42 @@
+#item-div{
+    padding-top : 5vh;
+    padding-left: 10%;
+    width: 100%;
+}
+#item-left-div{
+    display: inline-block;
+    width: 30vw;
+    /*height: 30vw;*/
+    margin-right: 2%;
+}
+#item-left-div  div {
+    border: 1px solid rgb(0,0,0);
+    padding: 10%;
+}
+.item-imgless1-div{
+    display: inline-block;
+}
+
+
+
+#item-right-div{
+    display: inline-block;
+    width: 30vw;
+    /*height: 30vw;*/
+}
+#item-name-span{
+    font-weight: bold;
+    font-size: 20px;
+}
+#item-hr{
+    height: 1px;
+    border-top: 1px solid rgb(0,0,1);
+    width: 25vw;
+    margin-left: 0;
+}
+#item-chicun-div{
+    width:25vw;
+    height: 25vw;
+    background-image: url("../img/chicun.png");
+    background-size: cover;
+}

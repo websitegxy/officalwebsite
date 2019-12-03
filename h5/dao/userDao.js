@@ -73,5 +73,18 @@ module.exports = {
                 connection.release();
             });
         });
+    },
+    queryProductItemById: function (req,res,next) {
+        pool.getConnection(function (err,connection) {
+            //获取页面传过来的参数
+            var param = req.query || req.params;
+            //建立数据库连接
+            connection.query($sql.queryProductItemById,param.id,function (err,result) {
+                console.log(err);
+                jsonWrite(res,result);
+                //释放数据库连接
+                connection.release();
+            });
+        });
     }
 }

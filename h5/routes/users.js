@@ -29,4 +29,8 @@ router.get('/findAllBrand',function (req,res,next) {
 router.get('/findProductByBranId',function(req,res,next) {
   userDao.queryProductByBranId(req,res,next);
 });
+//按商品id查询商品
+router.get('/findProductItemById',function (req,res,next) {
+  userDao.queryProductItemById(req,res,next);
+});
 module.exports = router;
