@@ -1,9 +1,10 @@
 
 .mySection{
     margin-top: 40px;
+    padding-top: 20px;
 }
 #home{
-    margin-top: 73px;
+    margin-top: 53px;
 }
 .container-fluid {
     padding: 0!important;
@@ -46,7 +47,7 @@
 /*公司简介*/
 #introduction-div {
     /*width: 80%;*/
-    background-color: rgb(67,68,69);
+    background-color: #3c3c3c;
 }
 #introduction-p{
     font-family: Arial;
@@ -57,24 +58,20 @@
     white-space: pre-wrap;
 }
 .mySection > .container > div {
-   width: 80%;
-   margin-left: 10%;
-   margin-right: 10%;
+    width: 60%;
+    margin: 0 auto;
 }
 /*brand*/
 #all-product {
    /*width: 80%;*/
    background-image: url('../img/bran.png');
    height: 27vw;
-   background-size: cover;
+   background-size: 100% 100%;
 }
 .product-div {
     display: inline-block;
     width: 25%;
     height: 100%;
-    border-right-width: 1px;
-    border-right-color: grey;
-    border-right-style: solid;
 }
 .product-div:hover {
     background-color: rgba(0,0,0,0.5);
@@ -94,21 +91,21 @@
 }
 #greyDiv {
     display: inline-block;
-    background-color: grey;
-    width: 20vw;
-    height: 20vw;
+    background-color: #3c3c3c;
+    width: 18vw;
+    height: 18vw;
     float: left;
-    padding-left: 10vw;
-    padding-top: 10vw;
+    padding-left: 8vw;
+    padding-top: 8.5vw;
     margin-right: 10vw;
-    margin-left: 10vw;
+    margin-left: 8vw;
 
 }
 #blackDiv {
     background-color: black;
-    width:15vw;
-    height: 15vw;
-    line-height: 15vw;
+    width: 14vw;
+    height: 14vw;
+    line-height: 14vw;
     text-align: center;
 }
 #hourImg {
@@ -130,7 +127,7 @@
     white-space: pre-wrap;
 }
 #why-h1-span {
-    font-size : 4vw;
+    font-size : 3vw;
     margin-bottom: 20px;
     display: block;
     font-family: Arial;
