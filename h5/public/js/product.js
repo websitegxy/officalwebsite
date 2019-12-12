@@ -1,4 +1,6 @@
 $(function () {
+    $('.nav-a').removeClass('nav-active');
+    $('#nav-a2').addClass('nav-active');
     //加载品牌
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){

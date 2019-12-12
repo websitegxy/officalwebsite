@@ -9,6 +9,7 @@
     background-color: grey;
     padding: 8% 0;
     position: relative;
+    top:113px;
 }
 #hr-div{
     width: 60%;
@@ -23,7 +24,7 @@
     text-align: center;
     /*margin-bottom: 8%;*/
     /*margin-top: 8%;*/
-    border-color: rgb(189,190,190);
+    border-color: 000;
     font-size: 1.4vw;
 }
 .products-hr span{
@@ -31,8 +32,8 @@
     background: grey;
     top: -0.8em;
     padding: 0 10px;
-    font-size: 1.4vw;
-    color: rgb(98,99,100);
+    font-size: 2vw;
+    color: #000;
 }
 /*全部产品导航栏*/
 #products-bran-div {
@@ -47,7 +48,7 @@
 #products-bran-div > ul > li {
     text-decoration: none;
     display: inline;
-    margin-right: 2vh;
+    margin-right: 4vw;
 }
 #products-bran-div > ul > li > a{
     text-decoration: none;
@@ -64,6 +65,7 @@
     width: 100%;
     padding: 8% 0;
     position: relative;
+    top: 113px;
 }
 .products-item-div {
     width: 60%;

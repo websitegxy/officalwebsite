@@ -2,11 +2,24 @@
 .mySection{
     margin-top: 40px;
 }
+#home{
+    margin-top: 73px;
+}
+.container-fluid {
+    padding: 0!important;
+}
+#home .glyphicon{
+    top:50%!important;
+    cursor: pointer;
+}
  ul li{
      list-style: none;
 }
  .none-div{
      display: none;
+ }
+ #new{
+     min-height: 300px;
  }
 /*水平分割线*/
 .myHr{
@@ -37,7 +50,7 @@
 }
 #introduction-p{
     font-family: Arial;
-    line-height: 2em;
+    line-height: 26px;
     font-size: 1vw;
     padding: 8% 10% 8%;
     color: rgb(154,153,152);
@@ -107,18 +120,19 @@
     background-color: white;
     width: 40vw;
     height: 25vw;
-    font-size: 1vh;
     font-family: Arial;
 }
 #why-text-div > p {
     font-family: Arial;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 1vw;
+    line-height: 22px;
     color: rgb(0,0,1);
     white-space: pre-wrap;
 }
 #why-h1-span {
-    font-size : 3em;
+    font-size : 4vw;
+    margin-bottom: 20px;
+    display: block;
     font-family: Arial;
     font-weight: bold;
 }

@@ -7,6 +7,11 @@
     padding: 10.5vw 12.6vw;
     background-color:rgb(49,49,49);
     height: 26vw;
+    min-height: 250px;
+}
+#footer-bran-div ul{
+    position: relative;
+    top: 40%;
 }
 #footer-bran-div ul li {
     margin-bottom: 0.012vw;

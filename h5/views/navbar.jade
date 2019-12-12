@@ -5,7 +5,9 @@ block content
     script(src='/libs/bootstrap/dist/js/bootstrap.js')
     script(src='/js/navbar.js')
 section.header-area
-    nav.nav.navbar-fixed-top.navbar-inverse
+    div.header-one
+        div.company 郑州贝利金刚石工具有限公司
+    nav.nav.navbar-fixed-top.navbar-inverse.headerNav
         div.container
             div.navbar-header
                 button.navbar-toggle(data-toggle="collapse",data-target="#menu")
@@ -13,11 +15,11 @@ section.header-area
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
-                a#cname.navbar-brand.nav-a(href="#") 郑州贝利金刚石工具有限公司
+                //- a#cname.navbar-brand.nav-a(href="#") 郑州贝利金刚石工具有限公司
             div#menu.collapse.navbar-collapse
                 ul.nav.navbar-nav
                     li.nav-item
-                        a#nav-a1.page-scroll.nav-a.nav-active(href="/") 首页
+                        a#nav-a1.page-scroll.nav-a.nav-active(href="/") 郑州贝利
                     li.nav-item
                         a#nav-a2.page-scoll.nav-a(href='/product') 全部产品
                     li.nav-item

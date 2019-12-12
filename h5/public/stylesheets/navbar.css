@@ -7,18 +7,51 @@
 .none-div {
     display: none;
 }
-
+#menu {
+    padding-left: 50px;
+    background: #2b2b2b;
+}
+#menu > ul > li {
+    float: left;
+    margin-right: 5vw;
+    padding: 0 1vw;
+}
 #menu > ul > li > a:hover,
 #menu .nav-active {
-    background-color: #080808;
+    background-color: #000;
     /*border-top-width: 0.5em;*/
-    border-top-color: #d58512;
-    color: #7a4300;
+    border-top-color: #e63e0d;
+    color: #fff;
 
 }
-.mySection{
-    margin-top: 40px;
+.navbar-inverse {
+    background: #2b2b2b!important;
 }
+.headerNav {
+    top: 55px!important;
+}
+.navbar-fixed-top {
+    
+    height: 58px;
+}
+
 ul li{
     list-style: none;
+}
+
+.header-one{
+    background: #444;
+    height: 55px;
+    color: #848484;
+    position: fixed;
+    z-index: 1030;
+    top:0;
+    width:100%;
+}
+.company {
+    width: 1070px;
+    margin: 0 auto;
+    line-height: 76px;
+    font-size: 1.1vw;
+    padding-left: 4vw;
 }
