@@ -105,12 +105,13 @@ body{
 .bigStyle {
     display: inline-block;
     background-color: #3c3c3c;
-    width: 22vw;
-    height: 23vw;
+    width: 26.5vw;
+    height: 27.5vw;
     float: left;
     position: relative;
-    margin-right: 6vw;
+    margin-right: 1.5vw;
     margin-left: 8vw;
+    margin-top: -4.9vw;
 }
 #bigDiv {
     width: 100%;
