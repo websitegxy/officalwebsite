@@ -5,7 +5,7 @@
 }
 #footer-bran-div {
     padding: 10.5vw 12.6vw;
-    background-color:rgb(49,49,49);
+    background-color: #2b2b2b;
     height: 26vw;
     min-height: 250px;
 }
@@ -14,7 +14,7 @@
     top: 40%;
 }
 #footer-bran-div ul li {
-    margin-bottom: 0.012vw;
+    margin-bottom: 0.3vw;
 }
 #footer-bran-div ul li > a {
     color: rgba(232,232,232,0.5);
@@ -26,12 +26,12 @@
     color: rgba(232,232,232,1);
 }
 #footer-div ul li > a {
-    color: rgb(154,153,152);
+    color: #3c3c3c;
     text-decoration: none;
     font-size: 1vw;
 }
 #footer-bran-div ul li > a:hover {
-    color: rgb(255,255,255);
+    color: rgb(154,153,152);
 }
 #footer-div {
     width: 100%;
@@ -39,17 +39,17 @@
     padding: 4% 8%;
 }
 #footer-div > ul {
+    text-align: center;
 }
 #footer-div > ul > li {
 
     display: inline;
-    color: rgb(154,153,152);
+    color: #3c3c3c;
     font-size: 1vw;
     margin-right: 4%;
 }
 #footer-div #footer-cname-li > span {
-    margin-right: 4%;
-    margin-left: 8%;
+    margin-left: 4%;
 }
 #footer-cname-li {
     font-weight: bold;

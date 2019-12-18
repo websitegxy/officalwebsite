@@ -1,4 +1,6 @@
-
+body{
+    background-color: #e4e4e4!important;
+}
 .mySection{
     margin-top: 40px;
     padding-top: 20px;
@@ -35,7 +37,7 @@
 }
 .myHr span{
     position: relative;
-    background: #fff;
+    background: #e4e4e4;
     top: -0.8em;
     padding: 0 10px;
     font-size: 1.4vw;
@@ -114,7 +116,7 @@
 }
 #why-text-div {
     display: inline-block;
-    background-color: white;
+    background-color: #e4e4e4;
     width: 40vw;
     height: 25vw;
     font-family: Arial;

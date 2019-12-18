@@ -1,27 +1,32 @@
 /*contact*/
 #contact {
-    margin-top: 113px;
+    margin-top: 93px;
 }
 #contact-container {
     padding: 0;
 }
 #contact-div1  {
-    background-color: grey;
+    background-color: #818181;
     text-align: center;
-    padding : 5vw
+    padding : 4.4vw 5vw;
 
 }
 .contact-div-div{
     display: inline-block;
-    background-color: black;
-    color: white;
-    padding:2vw 3vw 2vw 3vw;
+    background-color: #3c3c3c;
+    color: #7c7c7c;
+    font-size: 1.4vw;
     margin-right: 1vw;
+    font-weight: bold;
+    width: 7vw;
+    height: 5vw;
+    line-height: 5vw;
+    text-align: center;
 }
 #contact-img {
     display: inline-block;
-    width: 15vw;
-    margin-right: 1vw;
+    width: 10vw;
+    margin-right: 2vw;
 }
 #contact-img > img {
     width: 100%;
@@ -35,22 +40,25 @@
     margin-right: 20%;
     text-align: center;
     border-bottom: 1px grey solid;
-    padding: 2%;
+    padding: 25px;
+}
+.contact-tip {
+    margin-top:75px;
 }
 #contact-div-span3 {
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin:0 auto;
     text-align: center;
-    padding-top: 2%;
+    padding: 25px;
+    font-size: 1.1vw;
 }
 #contact-span1 {
     font-size: 0.2vw;
 
 }
 #contact-span2 {
-    font-size: 1vw;
-    font-weight: bold;
+    font-size: 2vw;
+    font-weight: 400;
 }
 #contact-span3 {
     font-size: 0.7vw;

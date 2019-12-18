@@ -19,7 +19,7 @@ $(function() {
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
             // $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='../img/branlog.png'/></div>");
-            $('#footer-bran-ul').append("<li><a href='/product#" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>");
+            $('#footer-bran-ul').append("<li><a href='/product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>");
         }
         $('#footer-bran-ul').append("<li><a href='/contact'>技术支持/客户服务</a></li>");
         // //品牌点击事件

@@ -2,6 +2,7 @@ extends layout
 block content
     meta(name='viewport',content='width=device-width,initial-scale=1')
     link(rel='stylesheet',href='/stylesheets/contact.css')
+    script(src='/js/contact.js')
     include navbar
     section#contact.mySection
         div#contact-container.container-fluid
@@ -12,7 +13,7 @@ block content
                 div.contact-div-div 销售
                 div.contact-div-div 售后
             div#contact-div2
-                div.contact-div-span
+                div.contact-div-span.contact-tip
                     span#contact-span1 本公司设有专业的销售经理、售后工程师，可上门为实际操作中遇到问题的用户提供具有针对性的解决方案
                 div.contact-div-span
                     span#contact-span2 购买本公司产品后可按照产品附赠的质量保证书进行质保。
