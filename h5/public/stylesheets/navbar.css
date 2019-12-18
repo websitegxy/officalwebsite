@@ -1,6 +1,6 @@
 .nav-a {
     font-size: 16px!important;
-    border-top-width: 0.5em!important;
+
     border-top-style: solid;
     border-top-color: transparent;
 }
@@ -55,4 +55,8 @@ ul li{
     line-height: 76px;
     font-size: 1.1vw;
     padding-left: 4vw;
+}
+.navbar-nav > li > a {
+    padding-top: 17px!important;
+    padding-bottom: 17px!important;
 }

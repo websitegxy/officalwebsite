@@ -14,6 +14,8 @@ body{
 #home .glyphicon{
     top:50%!important;
     cursor: pointer;
+    color:#e63e0d;
+    
 }
  ul li{
      list-style: none;

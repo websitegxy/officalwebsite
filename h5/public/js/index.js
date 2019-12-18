@@ -69,7 +69,7 @@ $(function(){
                     " <div class='carousel-caption' style='right:10%;left:10%;'>" +
                     "   <h1>" + data[i].article_tittle +"</h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border:none;color:#fff;'>查看详情</button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'>查看详情</button>" +
                     "       </p>" +
                     " </div>" +
                     "" +
@@ -81,7 +81,7 @@ $(function(){
                     " <div class='carousel-caption' style='right:10%;left:10%;'>" +
                     "   <h1>" + data[i].article_tittle +"</h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border:none;color:#fff;'>查看详情</button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'>查看详情</button>" +
                     "       </p>" +
                     " </div>" +
                     "" +
@@ -97,7 +97,7 @@ $(function(){
         }
         //品牌点击事件
         $(".product-div").click(function () {
-           window.location.href= '/productItem?id='+$(this).attr('branid');
+           window.location.href= '/product?id='+$(this).attr('branid');
         });
     });
     // 放大事件

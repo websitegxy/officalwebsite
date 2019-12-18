@@ -16,7 +16,10 @@ $(function(){
         var classify_name = data[0].base_classify_name;
         var main_img = data[0].img_main;
         var less_img = data[0].img_less;
-        alert(data[0].goods_name);
     })
+    // $(".toMack").unbind("click").bind("click",function(){
+    //     var $id = $(this).attr("data-id");
+    //     window.location.href="product?id="+$id;
+    // });
 });
 
