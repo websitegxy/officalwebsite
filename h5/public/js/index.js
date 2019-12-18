@@ -100,7 +100,19 @@ $(function(){
            window.location.href= '/productItem?id='+$(this).attr('branid');
         });
     });
+    // 放大事件
+    $("#bigDiv").unbind("click").bind("click",function(){
+        if($("#greyDiv").hasClass('smallStyle')){
+            $("#greyDiv").removeClass("smallStyle");
+            $("#greyDiv").addClass("bigStyle");
+            $("#blackDiv").css("z-index",'-1')
+        }else{
+            $("#greyDiv").removeClass("bigStyle");
+            $("#greyDiv").addClass("smallStyle");
+            $("#blackDiv").css("z-index",'1')
+        }
 
-
+    });
+   
 });
 
