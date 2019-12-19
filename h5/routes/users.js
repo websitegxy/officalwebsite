@@ -21,6 +21,10 @@ router.get('/findAllDict',function (req,res,next) {
 router.get('/findAllCarousel',function (req,res,next) {
   userDao.queryAllCarousel(req,res,next);
 })
+//查询新闻
+router.get('/findAllNews',function (req,res,next) {
+  userDao.queryAllNews(req,res,next);
+})
 //查询品牌
 router.get('/findAllBrand',function (req,res,next) {
   userDao.queryAllBrand(req,res,next);

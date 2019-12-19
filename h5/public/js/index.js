@@ -63,11 +63,12 @@ $(function(){
     //加载轮播图
     $.get('/users/findAllCarousel',function (data) {
         for(var i = 0; i <data.length;i++){
+            var img_url = "http://47.102.202.116:8080/Img/getImg?url=";
             if(i == 0){
                 $('#carousel-ol').append("<li class='active' data-target='#mycarousel', data-slide-to=" + i + "></li>");
-                $('#carousel-div').append("<div class='item active'><img class='carousel-img' src="+data[i].img_url +"><div class='container'>" +
+                $('#carousel-div').append("<div class='item active'><img class='carousel-img' src="+img_url+data[i].img_url +"><div class='container'>" +
                     " <div class='carousel-caption' style='right:10%;left:10%;'>" +
-                    "   <h1>" + data[i].article_tittle +"</h1>" +
+                    "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
                     "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'>查看详情</button>" +
                     "       </p>" +
@@ -77,9 +78,9 @@ $(function(){
             }else{
 
                 $('#carousel-ol').append("<li data-target='#mycarousel', data-slide-to=" + i + "></li>");
-                $('#carousel-div').append("<div class=item><img class='carousel-img' src=" + data[i].img_url + ">" +
+                $('#carousel-div').append("<div class=item><img class='carousel-img' src=" + img_url+data[i].img_url + ">" +
                     " <div class='carousel-caption' style='right:10%;left:10%;'>" +
-                    "   <h1>" + data[i].article_tittle +"</h1>" +
+                    "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
                     "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'>查看详情</button>" +
                     "       </p>" +

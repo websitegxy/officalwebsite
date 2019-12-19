@@ -53,6 +53,14 @@ module.exports = {
             })
         })
     },
+    queryAllNews: function (req,res,next) {
+        pool.getConnection(function (err,connection) {
+            connection.query($sql.queryAllNews,function (err,result) {
+                jsonWrite(res,result);
+                connection.release();
+            })
+        })
+    },
     queryAllBrand: function (req,res,next) {
         pool.getConnection(function (err,connection) {
             connection.query($sql.queryAllBrand,function (err,result) {
