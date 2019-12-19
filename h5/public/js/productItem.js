@@ -11,7 +11,7 @@ function getUrlParam(name) {
 }
 $(function(){
     var id = getUrlParam('id');
-    $.ajaxSettings.async = false;
+    // $.ajaxSettings.async = false;
     $.get('/users/findProductItemById?id=' + id,function (data) {
         var img_url = "http://47.102.202.116:8080/Img/getImg?url=";
         var goods_name = data[0].goods_name;
@@ -19,7 +19,9 @@ $(function(){
         var main_img = data[0].img_main == null ?"": img_url + data[0].img_main;
         var less_img = data[0].img_less == null ?"": img_url + data[0].img_less;
         var size_img = data[0].img_size == null ?"": img_url + data[0].img_size;
-        $('#item-chicun-div').css("background-image",size_img);
+        alert("size_img=" + size_img);
+        alert("image=" + $('#item-chicun-div').css('background-image'));
+        $('#item-chicun-div').css('backgroundImage',size_img);
     })
     // $(".toMack").unbind("click").bind("click",function(){
     //     var $id = $(this).attr("data-id");
