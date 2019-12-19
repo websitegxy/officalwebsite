@@ -23,8 +23,10 @@ $(function () {
             var branid =   $(this).attr('branId');
             $.get('/users/findProductByBranId?classify_id=' + branid,function (product) {
                 var html = "";
+
                 for(var j = 0; j < product.length; j++){
-                    html+='<div class="product-item-div" productId=' + product[j].id + '></div>';
+                    var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[j].img_url;
+                    html+='<div class="product-item-div" productId=' + product[j].id + ' style="background-image:url(' + img_url +')"></div>';
                 }
                 product_items_div.append(html)
                 var id = getUrlParam('id');

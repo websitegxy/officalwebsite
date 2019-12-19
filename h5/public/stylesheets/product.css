@@ -90,6 +90,6 @@ body{
     display: inline-block;
     width: 33%;
     height: 20vw;
-    background-image: url("../img/item1.png");
+    /*background-image: url("../img/item1.png");*/
     background-size: cover;
 }

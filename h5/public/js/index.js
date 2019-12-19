@@ -93,7 +93,8 @@ $(function(){
     //加载品牌
     $.get('/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
-            $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='../img/branlog.png'/></div>");
+            var img_url = "http://localhost:8080/Img/getImg?url=" + data[i].img_url;
+            $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='" + img_url +"'/></div>");
         }
         //品牌点击事件
         $(".product-div").click(function () {

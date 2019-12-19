@@ -37,7 +37,7 @@
 #item-chicun-div{
     width:32vw;
     height: 15vw;
-    background-image: url("../img/demo1.png");
+    /*background-image: url("../img/demo1.png");*/
     background-size: 100% 100%;
     margin-top:2vw;
 }
