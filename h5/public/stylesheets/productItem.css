@@ -35,13 +35,77 @@
     font-size: 1.2vw;
 }
 #item-chicun-div{
-    width:32vw;
+    width:30vw;
     height: 15vw;
-    background-image: url("../img/demo1.png");
-    background-size: 100% 100%;
     margin-top:2vw;
 }
-
+#item-chicun-div #table {
+    width: 100%;
+    color:#fff;
+    font-weight: 200;
+    background: #818181;
+    padding: 0 2vw;
+    padding-bottom: 1.5vw;
+}
+#item-chicun-div #table #table_title{
+    height:35px;
+    border-bottom: 1px solid #b1b1b1;
+    overflow: hidden;
+}
+#item-chicun-div #table #table_title p{
+    float:left;
+    line-height: 44px;
+    font-size: 1.1vw;
+}
+#item-chicun-div #table #table_title p:nth-child(1){
+    width:30%;
+    padding-left: 0.5vw;
+}
+#item-chicun-div #table #table_title p:nth-child(2){
+    width:30%;
+}
+#item-chicun-div #table #table_title p:nth-child(3){
+    width:40%;
+}
+#table_content ul{
+    margin: 0;
+    padding: 0;
+    
+}
+#table_content ul li{
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #b1b1b1;
+}
+#table_content ul li p{
+    float:left;
+    margin: 0 0 0px;
+    font-size: 1.1vw;
+}
+#table_content ul li p:nth-child(1){
+    width:30%;
+    padding-left: 0.5vw;
+}
+#table_content ul li p:nth-child(2){
+    width:30%;
+    padding-left:5%;
+}
+#table_content ul li p:nth-child(3){
+    width:40%;
+    padding-left:5%;
+}
+.item-chicun-title{
+    width: 100%;
+    height: 35px;
+    background: #3c3c3c;
+    color: #fff;
+    line-height: 35px;
+    padding-left: 2vw;
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 #item-imgmain-div{
     padding: 2vw;
     width: 34vw;

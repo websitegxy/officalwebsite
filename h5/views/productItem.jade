@@ -3,7 +3,7 @@ block content
     meta(name='viewport',content='width=device-width,initial-scale=1')
     link(rel='stylesheet',href='/stylesheets/product.css')
     link(rel='stylesheet',href='/stylesheets/productItem.css')
-    script(src='/js/product.js')
+    //- script(src='/js/product.js')
     script(src='/js/productItem.js')
     include navbar
     section#proudcts-section
@@ -17,17 +17,28 @@ block content
         div#item-div
             div#item-left-div
                 div#item-imgmain-div   
-                    img(src="/img/id1.png", alt="")
+                    img(src="", alt="")
                 div#item-imgless-div
                     div.item-imgless1-div 
-                        img(src="/img/id1.png", alt="")
+                        img(src="", alt="")
                     div.item-imgless1-div 
-                        img(src="/img/id1.png", alt="")
+                        img(src="", alt="")
             div#item-right-div
-                span#item-name-span 创新型品级
+                span#item-name-span 
                 hr#item-hr
-                p#item-bran-p 产品品牌: 豫嵩山
+                p#item-bran-p 产品品牌: 
+                    span 
                 p#item-tel-p 咨询电话： 0371-6666666
                 div#item-chicun-div
+                    div.item-chicun-title 产品规格 （单位：mm）
+                    div#table
+                        div#table_title
+                            p 直径
+                            p 刀头高度
+                            p 刀头厚度
+                        div#table_content
+                            ul
+                                li
+
             div.clear
     include footer
