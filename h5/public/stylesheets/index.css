@@ -168,7 +168,10 @@ body{
     font-family: Arial;
     font-weight: bold;
 }
-
+.carousel-control {
+    width:10%!important;
+    opacity: 1!important;
+}
 /*.contact-hr {*/
 /*    border-top: 1px solid grey;*/
 /*}*/
