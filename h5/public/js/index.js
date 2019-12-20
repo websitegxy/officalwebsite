@@ -102,7 +102,19 @@ $(function(){
            window.location.href= '/product?id='+$(this).attr('branid');
         });
     });
-    // 放大事件
+    // 加载新闻
+    $.get('/users/findAllNews',function (data) {
+        var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + data[0].img_url;
+        $('.newList').find("img").attr("src",img_url);
+        
+    });
+    $(".newList").unbind("click").bind("click",function(){
+        if($(".newList").hasClass("smallNew")){
+            $(".newList").removeClass("smallNew")
+        }else{
+            $(".newList").addClass("smallNew")
+        }
+    });
     $("#bigDiv").unbind("click").bind("click",function(){
         if($("#greyDiv").hasClass('smallStyle')){
             $("#greyDiv").removeClass("smallStyle");

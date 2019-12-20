@@ -26,6 +26,13 @@ body{
  #new{
      min-height: 300px;
  }
+ .newList img {
+     width: 100%;
+ }
+ .smallNew{
+     width:140%;
+     margin-left:-20%;
+ }
 /*水平分割线*/
 .myHr{
     /*width: 80%;*/
@@ -76,6 +83,7 @@ body{
     display: inline-block;
     width: 25%;
     height: 100%;
+    position: relative;
 }
 .product-div:hover {
     background-color: rgba(0,0,0,0.5);
@@ -83,7 +91,7 @@ body{
 .logo-div  {
     margin-left: 25%;
     margin-right: 25%;
-    position: relative;
+    position: absolute;
     top: 60%;
     width: 50%;
 }

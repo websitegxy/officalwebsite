@@ -19,13 +19,19 @@ $(function(){
         var main_img = data[0].img_main == null ?"": img_url + data[0].img_main;
         var less_img = data[0].img_less == null ?"": img_url + data[0].img_less;
         var size_img = data[0].img_size == null ?"": img_url + data[0].img_size;
-        alert("size_img=" + size_img);
-        alert("image=" + $('#item-chicun-div').css('background-image'));
-        $('#item-chicun-div').css('backgroundImage',size_img);
-    })
-    // $(".toMack").unbind("click").bind("click",function(){
-    //     var $id = $(this).attr("data-id");
-    //     window.location.href="product?id="+$id;
-    // });
+        $("#item-imgmain-div>img").attr("src",main_img);
+        $(".item-imgless1-div").eq(0).find("img").attr("src",main_img);
+        $(".item-imgless1-div").eq(1).find("img").attr("src",less_img);
+        $("#item-chicun-div>img").attr("src",size_img);
+        $("#item-name-span").text(goods_name);
+        $("#item-bran-p > span").text(classify_name);
+    });
+    $.get('/users/queryProductSizeById?id=' + id,function (data) {
+    });
+    // 事件
+    $(".item-imgless1-div").unbind("click").bind("click",function(){
+        var img_url = $(this).find("img").attr("src");
+        $("#item-imgmain-div>img").attr("src",img_url);
+    });
 });
 
