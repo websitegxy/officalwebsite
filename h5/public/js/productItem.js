@@ -12,6 +12,16 @@ function getUrlParam(name) {
 $(function(){
     var id = getUrlParam('id');
     // $.ajaxSettings.async = false;
+        //加载品牌
+        $.get('/users/findAllBrand',function (data) {
+            var html1 = ""
+            for(var i = 0; i < data.length;i++){
+                html1+="<li><a href='/product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>";
+            }
+            $('#products-bran-ul').append(html1);
+            
+    
+        });
     $.get('/users/findProductItemById?id=' + id,function (data) {
         var img_url = "http://47.102.202.116:8080/Img/getImg?url=";
         var goods_name = data[0].goods_name;
@@ -31,7 +41,7 @@ $(function(){
         for(var i = 0; i<data.length;i++){
             html+=`
                 <li>
-                    <p>${data[i].diameter}</p>
+                    <p>Φ ${data[i].diameter}</p>
                     <p>${data[i].height}</p>
                     <p>${data[i].thickness}</p>
                 </li>
