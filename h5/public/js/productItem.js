@@ -27,6 +27,17 @@ $(function(){
         $("#item-bran-p > span").text(classify_name);
     });
     $.get('/users/queryProductSizeById?id=' + id,function (data) {
+        var html = "";
+        for(var i = 0; i<data.length;i++){
+            html+=`
+                <li>
+                    <p>${data[i].diameter}</p>
+                    <p>${data[i].height}</p>
+                    <p>${data[i].thickness}</p>
+                </li>
+            `
+        }
+        $("#table_content ul").html(html)
     });
     // 事件
     $(".item-imgless1-div").unbind("click").bind("click",function(){
