@@ -37,4 +37,11 @@ router.get('/findProductByBranId',function(req,res,next) {
 router.get('/findProductItemById',function (req,res,next) {
   userDao.queryProductItemById(req,res,next);
 });
+
+//按商品id查询商品规格
+router.get('/queryProductSizeById',function (req,res,next) {
+    userDao.queryProductSizeById(req,res,next);
+});
+
+
 module.exports = router;
