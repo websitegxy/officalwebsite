@@ -25,7 +25,7 @@ $(function () {
                 var html = "";
 
                 for(var j = 0; j < product.length; j++){
-                    var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[j].img_url;
+                    var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[j].img_main;
                     html+='<div class="product-item-div" productId=' + product[j].id + ' style="background-image:url(' + img_url +')"></div>';
                 }
                 product_items_div.append(html)
