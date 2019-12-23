@@ -20,9 +20,6 @@ $(function(){
         if(top2 > scrollTop && scrollTop > top1){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a1').addClass('nav-active');
-        }else if(top3 > scrollTop && scrollTop > top2){
-            $('.nav-a').removeClass('nav-active');
-            $('#nav-a2').addClass('nav-active');
         }else if(top4 > scrollTop && scrollTop > top3){
             $('.nav-a').removeClass('nav-active');
             $('#nav-a3').addClass('nav-active');
