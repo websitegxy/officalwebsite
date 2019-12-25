@@ -89,7 +89,25 @@ body{
 .product-item-div {
     display: inline-block;
     width: 33%;
-    height: 20vw;
-    /*background-image: url("../img/item1.png");*/
-    background-size: cover;
+    padding: 20px;
+    background: #f1f1f1;
+    margin-right:0.33%;
+    margin-bottom:20px;
+    cursor: pointer;
+    color: #818181;
 }
+.product-item-div:hover{
+    background: #e4e4e4;
+    color:#333;
+}
+.product-item-div img {
+    width:100%;
+}
+.product-item-div p {
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
