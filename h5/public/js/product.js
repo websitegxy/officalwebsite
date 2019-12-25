@@ -7,7 +7,7 @@ $(function () {
         var html2 = ""
         for(var i = 0; i < data.length;i++){
             html1+="<li><a href='javascript:void(0)' class='toMack' data-id='" + data[i].id +"'>"+ data[i].classify_name +"</a></li>";
-            html2+="<div class='products-item-div' id='" + data[i].id +"'><span>" + data[i].classify_name +"</span><hr><div class='product-items-div' branId='" + data[i].id+"'></div></div>'";
+            html2+="<div class='products-item-div' id='" + data[i].id +"'><span>" + data[i].classify_name +"</span><hr><div class='product-items-div' branId='" + data[i].id+"></div></div>'";
         }
         $('#products-bran-ul').append(html1);
         $('#products-detail-div').append(html2);
