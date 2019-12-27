@@ -65,10 +65,10 @@ $(function(){
             if(i == 0){
                 $('#carousel-ol').append("<li class='active' data-target='#mycarousel', data-slide-to=" + i + "></li>");
                 $('#carousel-div').append("<div class='item active'><img class='carousel-img' src="+img_url+data[i].img_url +"><div class='container'>" +
-                    " <div class='carousel-caption' style='right:10%;left:10%;'>" +
+                    " <div class='carousel-caption' style='right:12%;left:10%;'>" +
                     "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
                     "       </p>" +
                     " </div>" +
                     "" +
@@ -77,10 +77,10 @@ $(function(){
 
                 $('#carousel-ol').append("<li data-target='#mycarousel', data-slide-to=" + i + "></li>");
                 $('#carousel-div').append("<div class=item><img class='carousel-img' src="+ img_url+data[i].img_url + ">" +
-                    " <div class='carousel-caption' style='right:10%;left:10%;'>" +
+                    " <div class='carousel-caption' style='right:12%;left:10%;'>" +
                     "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 5px;color: #fff;font-size: 0.9vw;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
                     "       </p>" +
                     " </div>" +
                     "" +

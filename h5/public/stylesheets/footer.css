@@ -12,6 +12,7 @@
 #footer-bran-div ul{
     position: relative;
     top: 40%;
+    padding: 0;
 }
 #footer-bran-div ul li {
     margin-bottom: 0.8vw;

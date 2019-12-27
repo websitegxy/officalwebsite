@@ -7,14 +7,18 @@
 .none-div {
     display: none;
 }
+.containerHeader {
+    width: 1140px;
+    margin: 0 auto;
+}
 #menu {
     padding-left: 50px;
     background: #2b2b2b;
 }
 #menu > ul > li {
     float: left;
-    margin-right: 3.5vw;
-    padding: 0 1vw;
+    margin-right: 45px;
+    padding: 0 12px;
 }
 #menu > ul > li > a:hover,
 #menu .nav-active {
@@ -53,8 +57,8 @@ ul li{
     width: 1070px;
     margin: 0 auto;
     line-height: 86px;
-    font-size: 1.2vw;
-    padding-left: 2.1vw;
+    font-size: 18px;
+    padding-left: 41px;
 }
 .navbar-nav > li > a {
     padding-top: 17px!important;
