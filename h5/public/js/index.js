@@ -58,6 +58,7 @@ $(function(){
         }
     });
     //加载轮播图
+    $.ajaxSettings.async = false;
     $.get('/users/findAllCarousel',function (data) {
         for(var i = 0; i <data.length;i++){
 		var img_url = "";
@@ -125,6 +126,6 @@ $(function(){
         }
 
     });
-   
+
 });
 
