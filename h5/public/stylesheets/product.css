@@ -99,7 +99,7 @@ body{
 }
 .product-item-div-big {
     display: inline-block;
-    width: 50%;
+    width: 49.5%;
     padding: 20px;
     background:url("../img/pruductImg.png");
     background-size:100% 100%; 
