@@ -1,5 +1,5 @@
 body{
-    background-color: #e4e4e4!important;
+    background-color: #e8e8e8!important;
 }
 #product{
     width:100%;
@@ -150,7 +150,6 @@ body{
 }
 #why-text-div {
     display: inline-block;
-    background-color: #e4e4e4;
     width: 40vw;
     height: 25vw;
     font-family: Arial;

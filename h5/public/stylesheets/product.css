@@ -1,5 +1,5 @@
 body{
-    background-color: #e4e4e4!important;
+    background-color: #e8e8e8!important;
 }
 #products-section {
     margin: 0 0;
@@ -90,7 +90,19 @@ body{
     display: inline-block;
     width: 33%;
     padding: 20px;
-    background: #f1f1f1;
+    background:url("../img/pruductImg.png");
+    background-size:100% 100%; 
+    margin-right:0.33%;
+    margin-bottom:20px;
+    cursor: pointer;
+    color: #818181;
+}
+.product-item-div-big {
+    display: inline-block;
+    width: 50%;
+    padding: 20px;
+    background:url("../img/pruductImg.png");
+    background-size:100% 100%; 
     margin-right:0.33%;
     margin-bottom:20px;
     cursor: pointer;

@@ -21,16 +21,27 @@ $(function () {
         $('.product-items-div').each(function () {
             var product_items_div = $(this);
             var branid =   $(this).attr('branId');
-            $.get('/users/findProductByBranId?classify_id=' + branid,function (product) {
+            $.get('http://47.102.202.116:8080/product/queryAllProduct?baseClassifyId=' + branid,function (product) {
+                var product = product.rows;
                 var html = "";
+                for(var i = 0; i <product.length;i++){
+                    for(var j = 0; j < product[i].productes.length; j++){
+                        var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[i].productes[j].imgMain;
+                        if(product[i].productes[j].imgSize == '0'){
+                            html+='<div class="product-item-div" productId=' + product[i].productes[j].id + '>';
+                            html+='<img src='+img_url+'>';
+                            html+='<p>'+product[i].productes[j].goodsName+'</p>'
+                            html+='</div>'
+                        }else if(product[i].productes[j].imgSize == '1'){
+                            html+='<div class="product-item-div product-item-div-big" productId=' + product[i].productes[j].id + '>';
+                            html+='<img src='+img_url+'>';
+                            html+='<p>'+product[i].productes[j].goodsName+'</p>'
+                            html+='</div>'
+                        }
 
-                for(var j = 0; j < product.length; j++){
-                    var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[j].img_main;
-                    html+='<div class="product-item-div" productId=' + product[j].id + '>';
-                    html+='<img src='+img_url+'>';
-                    html+='<p>'+product[j].goods_name+'</p>'
-                    html+='</div>'
+                    }
                 }
+
                 product_items_div.append(html)
                 var id = getUrlParam('id');
                 if(id){
