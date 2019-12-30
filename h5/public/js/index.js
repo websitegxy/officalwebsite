@@ -68,7 +68,7 @@ $(function(){
                     " <div class='carousel-caption' style='right:12%;left:10%;'>" +
                     "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/product?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
                     "       </p>" +
                     " </div>" +
                     "" +
@@ -80,7 +80,7 @@ $(function(){
                     " <div class='carousel-caption' style='right:12%;left:10%;'>" +
                     "   <h1></h1>" +
                     "       <p style='text-align: right;'>" +
-                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/productItem?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
+                    "           <button class='btn btn-default' style='background: #e63e0d;border: none;padding: 4px 20px;color: #fff;font-size: 17px;border-radius: 0;'><a href='/product?id="+data[i].product_id+"' style='color:#fff'>查看详情</a></button>" +
                     "       </p>" +
                     " </div>" +
                     "" +
