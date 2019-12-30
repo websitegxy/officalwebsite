@@ -20,8 +20,9 @@
     padding-top: 2vw;
 }
 #item-name-span{
-    font-weight: bold;
+    font-weight: normal;
     font-size: 36px;
+    letter-spacing:2px;
 }
 #item-hr{
     height: 1px;
@@ -33,10 +34,12 @@
 #item-bran-p {
     font-size: 20px;
     color: #595959;
+    letter-spacing:2px;
 }
 #item-tel-p{
     font-size: 20px;
     color: #595959;
+    letter-spacing:2px;
 }
 #item-chicun-div{
     width:30vw;
