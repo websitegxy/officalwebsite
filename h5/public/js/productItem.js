@@ -23,7 +23,7 @@ $(function(){
     
         });
     $.get('/users/findProductItemById?id=' + id,function (data) {
-        var img_url = "http://47.102.202.116:8080/Img/getImg?url=";
+        var img_url = "";
         var goods_name = data[0].goods_name;
         var classify_name = data[0].base_classify_name;
         var main_img = data[0].img_main == null ?"": img_url + data[0].img_main;

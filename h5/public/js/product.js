@@ -27,7 +27,8 @@ $(function () {
                 for(var i = 0; i <product.length;i++){
                     html+="<div>"
                     for(var j = 0; j < product[i].productes.length; j++){
-                        var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[i].productes[j].imgMain;
+                        // var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[i].productes[j].imgMain;
+                        var img_url = " " + product[i].productes[j].imgMain;
                         if(product[i].productes[j].imgSize == '0'){
                             html+='<div class="product-item-div" productId=' + product[i].productes[j].id + '>';
                             html+='<img src='+img_url+'>';
