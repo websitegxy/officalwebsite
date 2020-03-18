@@ -16,14 +16,14 @@ $(function(){
         $.get('/webapp/users/findAllBrand',function (data) {
             var html1 = ""
             for(var i = 0; i < data.length;i++){
-                html1+="<li><a href='/product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>";
+                html1+="<li><a href='product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>";
             }
             $('#products-bran-ul').append(html1);
 
 
         });
     $.get('/webapp/users/findProductItemById?id=' + id,function (data) {
-        var img_url = "";
+        var img_url = "/webapp";
         var goods_name = data[0].goods_name;
         var classify_name = data[0].base_classify_name;
         var main_img = data[0].img_main == null ?"": img_url + data[0].img_main;
