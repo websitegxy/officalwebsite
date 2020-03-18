@@ -1,5 +1,5 @@
 $(function() {
-    $.get('/users/findAllDict', function (data) {
+    $.get('/webapp/users/findAllDict', function (data) {
         for (var i = 0; i < data.length; i++) {
             //加载公司名称
             if (data[i].code == 'cname') {
@@ -16,7 +16,7 @@ $(function() {
         }
     });
     //加载品牌
-    $.get('/users/findAllBrand',function (data) {
+    $.get('/webapp/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
             // $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='../img/branlog.png'/></div>");
             $('#footer-bran-ul').append("<li><a href='/product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>");

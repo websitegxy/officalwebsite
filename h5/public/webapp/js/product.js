@@ -2,7 +2,7 @@ $(function () {
     $('.nav-a').removeClass('nav-active');
     $('#nav-a2').addClass('nav-active');
     //加载品牌
-    $.get('/users/findAllBrand',function (data) {
+    $.get('/webapp/users/findAllBrand',function (data) {
         var html1 = ""
         var html2 = ""
         for(var i = 0; i < data.length;i++){
@@ -28,7 +28,7 @@ $(function () {
                     html+="<div>"
                     for(var j = 0; j < product[i].productes.length; j++){
                         // var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + product[i].productes[j].imgMain;
-                        var img_url = " " + product[i].productes[j].imgMain;
+                        var img_url = "/webapp" + product[i].productes[j].imgMain;
                         if(product[i].productes[j].imgSize == '0'){
                             html+='<div class="product-item-div" productId=' + product[i].productes[j].id + '>';
                             html+='<img src='+img_url+'>';

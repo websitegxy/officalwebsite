@@ -13,16 +13,16 @@ $(function(){
     var id = getUrlParam('id');
     // $.ajaxSettings.async = false;
         //加载品牌
-        $.get('/users/findAllBrand',function (data) {
+        $.get('/webapp/users/findAllBrand',function (data) {
             var html1 = ""
             for(var i = 0; i < data.length;i++){
                 html1+="<li><a href='/product?id=" +data[i].id+ "'>"+ data[i].classify_name +"</a></li>";
             }
             $('#products-bran-ul').append(html1);
-            
-    
+
+
         });
-    $.get('/users/findProductItemById?id=' + id,function (data) {
+    $.get('/webapp/users/findProductItemById?id=' + id,function (data) {
         var img_url = "";
         var goods_name = data[0].goods_name;
         var classify_name = data[0].base_classify_name;
@@ -36,7 +36,7 @@ $(function(){
         $("#item-name-span").text(goods_name);
         $("#item-bran-p > span").text(classify_name);
     });
-    $.get('/users/queryProductSizeById?id=' + id,function (data) {
+    $.get('/webapp/users/queryProductSizeById?id=' + id,function (data) {
         var html = "";
         for(var i = 0; i<data.length;i++){
             html+=`

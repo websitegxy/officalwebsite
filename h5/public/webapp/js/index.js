@@ -32,7 +32,7 @@ $(function(){
             $('#nav-a5').addClass('nav-active');
         }
     })
-    $.get('/users/findAllDict',function (data) {
+    $.get('/webapp/users/findAllDict',function (data) {
         for(var i = 0; i < data.length; i++){
             //加载公司名称
             // if(data[i].code == 'cname'){
@@ -58,9 +58,9 @@ $(function(){
         }
     });
     //加载轮播图
-    $.get('/users/findAllCarousel',function (data) {
+    $.get('/webapp/users/findAllCarousel',function (data) {
         for(var i = 0; i <data.length;i++){
-		var img_url = "";
+		var img_url = "/webapp";
            // var img_url = "http://47.102.202.116:8080/Img/getImg?url=";
             if(i == 0){
                 $('#carousel-ol').append("<li class='active' data-target='#mycarousel', data-slide-to=" + i + "></li>");
@@ -90,10 +90,10 @@ $(function(){
 
     });
     //加载品牌
-    $.get('/users/findAllBrand',function (data) {
+    $.get('/webapp/users/findAllBrand',function (data) {
         for(var i = 0; i < data.length;i++){
             // var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + data[i].img_url;
-            var img_url = "" + data[i].img_url;
+            var img_url = "/webapp" + data[i].img_url;
             $('#all-product').append("<div class='product-div' branid='"+ data[i].id+"'><img class='logo-div' src='" + img_url +"'/></div>");
         }
         //品牌点击事件
@@ -102,11 +102,11 @@ $(function(){
         });
     });
     // 加载新闻
-    $.get('/users/findAllNews',function (data) {
+    $.get('/webapp/users/findAllNews',function (data) {
         // var img_url = "http://47.102.202.116:8080/Img/getImg?url=" + data[0].img_url;
-        var img_url = "" + data[0].img_url;
+        var img_url = "/webapp" + data[0].img_url;
         $('.newList').find("img").attr("src",img_url);
-        
+
     });
     $(".newList").unbind("click").bind("click",function(){
         if($(".newList").hasClass("smallNew")){
@@ -127,6 +127,6 @@ $(function(){
         }
 
     });
-   
+
 });
 

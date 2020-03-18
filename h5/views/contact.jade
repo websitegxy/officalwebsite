@@ -1,14 +1,15 @@
 extends layout
 block content
     meta(name='viewport',content='width=device-width,initial-scale=1')
-    link(rel='stylesheet',href='/stylesheets/contact.css')
-    script(src='/js/contact.js')
+    meta(name='renderer',content='webkit|ie-comp|ie-stand')
+    link(rel='stylesheet',href='stylesheets/contact.css')
+    script(src='js/contact.js')
     include navbar
     section#contact.mySection
         div#contact-container.container-fluid
             div#contact-div1
                 div#contact-img
-                    img(src='/img/24.png')
+                    img(src='img/24.png')
                 div.contact-div-div 生产
                 div.contact-div-div 销售
                 div.contact-div-div 售后
