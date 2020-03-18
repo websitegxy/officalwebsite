@@ -21,7 +21,7 @@ $(function () {
         $('.product-items-div').each(function () {
             var product_items_div = $(this);
             var branid =   $(this).attr('branId');
-            $.get('http://www.zhengzhoubeili.com:8080/product/queryAllProduct?baseClassifyId=' + branid,function (product) {
+            $.get('http://120.27.94.108:8080/product/queryAllProduct?baseClassifyId=' + branid,function (product) {
                 var product = product.rows;
                 var html = "";
                 for(var i = 0; i <product.length;i++){
